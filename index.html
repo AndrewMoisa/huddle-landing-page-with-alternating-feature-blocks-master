@@ -10,14 +10,8 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="normalize.css" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/styles/normalize.css" />
+    <link rel="stylesheet" href="/styles/style.css" />
 
     <title>
       Frontend Mentor | Huddle landing page with alternating feature blocks
@@ -25,20 +19,24 @@
   </head>
   <body>
     <header>
-      <img src="images/logo.svg" alt="logo" />
-      <a href="">Try it Free</a>
-    </header>
-    <main>
-      <section>
+      <div class="nav">
+        <img class="logo" src="images/logo.svg" alt="logo" />
+        <a class="nav-btn" href="">Try it Free</a>
+      </div>
+      <section class="hero">
         <h1>Build The Community Your Fans Will Love</h1>
         <p>
           Huddle re-imagines the way we build communities. You have a voice, but
           so does your audience. Create connections with your users as you
           engage in genuine discussion.
         </p>
-        <a href="">Get Started For Free</a>
+        <a class="btn-primary" href="">Get Started For Free</a>
+        <img src="images/illustration-mockups.svg" alt="ilustration mockup" />
       </section>
-      <section>
+    </header>
+    <main>
+      <section class="cards">
+        <img src="images/illustration-grow-together.svg" alt="" />
         <h2>Grow Together</h2>
         <p>
           Generate meaningful discussions with your audience and build a strong,
@@ -46,14 +44,22 @@
           with a feedback form.
         </p>
       </section>
-      <section>
+      <section class="cards">
+        <img
+          src="images/illustration-flowing-conversation.svg"
+          alt="ilustration converstation"
+        />
         <h2>Flowing Conversations</h2>
         <p>
           You wouldn't paginate a conversation in real life, so why do it
           online? Our threads have just-in-time loading for a more natural flow.
         </p>
       </section>
-      <section>
+      <section class="cards last-card">
+        <img
+          src="images/illustration-your-users.svg"
+          alt=" ilustration your users"
+        />
         <h2>Your Users</h2>
         <p>
           It takes no time at all to integrate Huddle with your app's
@@ -61,31 +67,31 @@
           users can start chatting immediately.
         </p>
       </section>
-      <section>
-        <h3>Ready To Build Your Community?</h3>
-        <a href="">Get Started For Free</a>
-      </section>
     </main>
     <footer>
-      <img src="/images/logo.svg" alt="logo" />
+      <section class="cards comunity-card">
+        <h3>Ready To Build Your Community?</h3>
+        <a class="btn-primary" href="">Get Started For Free</a>
+      </section>
+      <img class="footer-logo" src="/images/logo.svg" alt="logo" />
       <section>
-        <div>
+        <div class="footer-container">
           <img src="images/icon-location.svg" alt="location icon" />
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua
           </p>
         </div>
-        <div>
+        <div class="footer-container">
           <img src="images/icon-phone.svg" alt="phone icon" />
           <p>+1-543-123-4567</p>
         </div>
-        <div>
+        <div class="footer-container">
           <img src="images/icon-email.svg" alt="email icon" />
           <p>example@huddle.com</p>
         </div>
       </section>
-      <section>
+      <section class="footer-links">
         <h3>About Us</h3>
         <h3>What We Do</h3>
         <h3>FAQ</h3>
@@ -93,15 +99,24 @@
         <h3>Blog</h3>
         <h3>Contact Us</h3>
       </section>
-      <section>
+      <section class="footer-social">
+        <i class="fa-brands fa-facebook fa-lg"></i>
+        <i class="fa-brands fa-twitter fa-lg"></i>
+        <i class="fa-brands fa-instagram fa-lg"></i>
+      </section>
+      <section class="footer-fdmentor">
         &copy; Copyright 2018 Huddle. All rights reserved.
         <p class="attribution">
           Challenge by
           <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
             >Frontend Mentor</a
-          >. Coded by <a href="#">Your Name Here</a>.
+          >. Coded by <a href="https://github.com/AndrewMoisa">Andrew Moisa</a>.
         </p>
       </section>
     </footer>
+    <script
+      src="https://kit.fontawesome.com/aafd0c0d38.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
